@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Document</title>
+    <style>
+        .user-profile{
+                   border: 2px solid green;
+    padding: 20px;
+    margin: 20px;;
+    width: 45%;
+        }
+        .highlight-box{
+       border: 5px solid greenyellow;
+   
+        }
+    </style>
 </head>
+
 <body>
-    
+     <div class="preload">
+      <div class="emoji">🕐</div>
+
+      
+   
+ </div>
+ <input type="text" id="input_user" class="border border-indigo-600">
+ <!-- <button onclick="filterdata()">Filter </button> -->
+<label for="cars">Choose a Field</label>
+
+<select name="data_fields" id="data_fields" class="border border-indigo-600">
+    <option value="select">select</option>
+  <option value="name">Name</option>
+  <option value="email">Email</option>
+  <option value="Company">Company</option>
+</select>
+
+ <div class="cards-container">
+        <div id="cards-inner" class=" flex flex-wrap">
+        </div>
+      </div>
 </body>
 <script src="userdata.js"></script>
 </html>
